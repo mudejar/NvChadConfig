@@ -73,7 +73,23 @@ local plugins = {
   -- A user-friendly alternative to 'find'
   {
     "sharkdp/fd",
+  },
+
+  {
+    "andweeb/presence.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("presence").setup()
+    end,
   }
+-- A plugin for displaying your neovim activity on Discord
+--  {
+--    'andweeb/presence.nvim',
+--    lazy = false,
+--    config = function()
+--      require("presence").setup()
+--    end,
+--  }
 
   -- To make a plugin not be loaded
   -- {

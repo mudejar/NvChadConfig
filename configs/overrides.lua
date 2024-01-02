@@ -40,9 +40,6 @@ M.mason = {
     "clangd",
     "clang-format",
 
-    -- java stuff
-    "jdtls",
-
     -- go stuff
     "gopls",
   },
