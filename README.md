@@ -1,9 +1,9 @@
-### Mudejar's nvim config 
+# Mudejar's nvim config 
 
 ## Description
 This repository contains the custom part of my Neovim configuration. I use NvChad as the base setup, and the custom plugins and configurations made by myself are stored in this repository.
 
-# System requirements and expectations
+### System requirements and expectations
 This repository should be installed as a folder named `custom`, and it should fit into a wider neovim installation with a parent directory located at `$HOME/.config/nvim/` that will resemble the following tree structure:
 ```
 .
