@@ -5,6 +5,7 @@ This repository contains the custom part of my Neovim configuration. I use NvCha
 
 # System requirements and expectations
 This repository should be installed as a folder named `custom`, and it should fit into a wider neovim installation with a parent directory located at `$HOME/.config/nvim/` that will resemble the following tree structure:
+```
 .
 ├── init.lua
 ├── lazy-lock.json
@@ -38,6 +39,7 @@ This repository should be installed as a folder named `custom`, and it should fi
         │   ├── telescope.lua
         │   └── treesitter.lua
         └── init.lua
+```
 
 This means that a dotfile repository must take into account that this custom configuration is a repository which is to be downloaded in the location of another repository. I have captured how to do this in my [dotfile repository](https://github.com/mudejar/dotfiles).
 
