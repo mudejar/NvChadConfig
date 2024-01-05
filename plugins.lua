@@ -47,9 +47,22 @@ local plugins = {
     end,
   },
 
-  -- Java server plugin
+  -- Java client plugin
+  -- {
+  --   "mfussenegger/nvim-jdtls",
+  --   config = function()
+  --     require("nvim-jdtls").setup({
+  --       cmd = { }
+  --     })
+  --   end,
+  -- },
+
+  -- Java plugin
   {
-    "mfussenegger/nvim-jdtls",
+    "neoclide/coc.nvim",
+    config = function()
+      require("coc.nvim").setup()
+    end,
   },
 
   -- Leetcode plugin 
@@ -68,13 +81,20 @@ local plugins = {
   -- Ripgrep plugin (required for telescope)
   {
     "BurntSushi/ripgrep",
+    config = function()
+      require("ripgrep").setup()
+    end,
   },
 
   -- A user-friendly alternative to 'find'
   {
     "sharkdp/fd",
+    config = function()
+      require("fd").setup()
+    end,
   },
 
+  -- A plugin for displaying your neovim activity on Discord
   {
     "andweeb/presence.nvim",
     event = "VeryLazy",
@@ -82,20 +102,6 @@ local plugins = {
       require("presence").setup()
     end,
   }
--- A plugin for displaying your neovim activity on Discord
---  {
---    'andweeb/presence.nvim',
---    lazy = false,
---    config = function()
---      require("presence").setup()
---    end,
---  }
-
-  -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
 
   -- All NvChad plugins are lazy-loaded by default
   -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
