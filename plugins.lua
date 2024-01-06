@@ -47,24 +47,6 @@ local plugins = {
     end,
   },
 
-  -- Java client plugin
-  -- {
-  --   "mfussenegger/nvim-jdtls",
-  --   config = function()
-  --     require("nvim-jdtls").setup({
-  --       cmd = { }
-  --     })
-  --   end,
-  -- },
-
-  -- Java plugin
-  {
-    "neoclide/coc.nvim",
-    config = function()
-      require("coc.nvim").setup()
-    end,
-  },
-
   -- Leetcode plugin 
   {
    "ianding1/leetcode.vim",
