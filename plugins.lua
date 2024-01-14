@@ -49,14 +49,24 @@ local plugins = {
 
   -- Leetcode plugin 
   {
-   "ianding1/leetcode.vim",
-    cmd = {"LeetCodeSignIn", "LeetCodeList", "LeetCodeTest", "LeetCodeSubmit"},
-    init = function()
-      require("core.utils").load_mappings "leetcode"
-    end,
+    "kawre/leetcode.nvim",
+    build = ":TSUpdate html",
+    event = "BufEnter",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim", -- required by telescope
+      "MunifTanjim/nui.nvim",
+
+      -- optional
+      "nvim-treesitter/nvim-treesitter",
+      "rcarriga/nvim-notify",
+      "nvim-tree/nvim-web-devicons",
+    },
+    opts = {
+      lang = "python3",
+    },
     config = function()
-      vim.g.leetcode_browser = 'brave'
-      vim.g.leetcode_solution_filetype = 'python3'
+      require("leetcode").setup()
     end,
   },
 
