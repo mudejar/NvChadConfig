@@ -62,11 +62,10 @@ local plugins = {
       "rcarriga/nvim-notify",
       "nvim-tree/nvim-web-devicons",
     },
-    opts = {
-      lang = "python3",
-    },
     config = function()
-      require("leetcode").setup()
+      require("leetcode").setup({
+        lang = "python3"
+      })
     end,
   },
 

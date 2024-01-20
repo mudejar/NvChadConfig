@@ -12,15 +12,6 @@ M.general = {
   },
 }
 
--- more keybinds!
-M.leetcode = {
-  plugin = true,
-  n = {
-    ["<leader>ll"] = { ":LeetCodeList <CR>", "List problems available in Leetcode"},
-    ["<leader>lt"] = { ":LeetCodeTest <CR>", "Run leet code tests for problem"},
-    ["<leader>ls"] = { ":LeetCodeSubmit <CR>", "Submit the solution you've made"},
-    ["<leader>li"] = { ":LeetCodeSignIn <CR>", "Sign in to your Leetcode account"},
-  },
-}
+-- more keybinds
 
 return M
