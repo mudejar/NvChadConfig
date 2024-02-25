@@ -83,15 +83,6 @@ local plugins = {
     config = function()
       require("fd").setup()
     end,
-  },
-
-  -- A plugin for displaying your neovim activity on Discord
-  {
-    "andweeb/presence.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("presence").setup()
-    end,
   }
 
   -- All NvChad plugins are lazy-loaded by default
